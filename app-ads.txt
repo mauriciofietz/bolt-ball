@@ -1,0 +1,10 @@
+# app-ads.txt do Bolt Ball (PLACEHOLDER: ainda nao declara nenhum vendedor).
+#
+# 1. Pegar o ID de editor no AdMob: Configuracoes > Informacoes da conta > ID do editor (pub-XXXXXXXXXXXXXXXX).
+# 2. Trocar a linha comentada abaixo pela linha que o proprio AdMob mostra em Apps > app-ads.txt (tirar o "#" do inicio).
+# 3. ONDE PUBLICAR: o AdMob procura em https://<dominio-do-site-da-loja>/app-ads.txt, na RAIZ do dominio.
+#    Com o site em https://mauriciofietz.github.io/bolt-ball/ a raiz e https://mauriciofietz.github.io/app-ads.txt,
+#    que vem do repositorio "mauriciofietz.github.io" (site de usuario), NAO do repositorio bolt-ball.
+#    Este arquivo dentro de /bolt-ball/ nao e lido pelo AdMob.
+#
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0

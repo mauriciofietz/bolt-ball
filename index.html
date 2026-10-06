@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en" data-title-en="Bolt Ball: 3D ball runner for iPhone and Android" data-title-pt="Bolt Ball: corrida de bola em 3D para iPhone e Android" data-title-es="Bolt Ball: carrera de bola en 3D para iPhone y Android" data-title-fr="Bolt Ball&nbsp;: course d'obstacles en 3D pour iPhone et Android" data-title-de="Bolt Ball: 3D-Ball-Runner für iPhone und Android">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bolt Ball: 3D ball runner for iPhone and Android</title>
+<meta name="description" content="Bolt Ball is a 3D runner: roll a ball down a floating three-lane track, switch lanes, jump, dive and dodge obstacles. 50 levels in 5 worlds, endless mode and 30 balls to collect.">
+<meta name="theme-color" content="#9bd9ff">
+<link rel="canonical" href="https://mauriciofietz.github.io/bolt-ball/">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/fredoka.woff2" as="font" type="font/woff2" crossorigin>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bolt Ball">
+<meta property="og:description" content="Roll a ball down a floating 3D track: switch lanes, jump, dive and dodge obstacles.">
+<meta property="og:url" content="https://mauriciofietz.github.io/bolt-ball/">
+<meta property="og:image" content="https://mauriciofietz.github.io/bolt-ball/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css">
+<script src="lang.js"></script>
+</head>
+<body>
+<a class="skip" href="#main"><span data-l="en">Skip to content</span><span data-l="pt">Pular para o conteúdo</span><span data-l="es">Saltar al contenido</span><span data-l="fr">Aller au contenu</span><span data-l="de">Zum Inhalt springen</span></a>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="./" aria-label="Bolt Ball"><img src="img/icon-96.webp" width="40" height="40" alt=""> Bolt Ball</a>
+    <nav class="langs" aria-label="Language / Idioma / Langue / Sprache">
+      <a href="#en" data-set="en" hreflang="en" lang="en">EN</a>
+      <a href="#pt" data-set="pt" hreflang="pt-BR" lang="pt-BR">PT</a>
+      <a href="#es" data-set="es" hreflang="es" lang="es">ES</a>
+      <a href="#fr" data-set="fr" hreflang="fr" lang="fr">FR</a>
+      <a href="#de" data-set="de" hreflang="de" lang="de">DE</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div>
+        <img class="hero-logo" src="img/logo-720.webp" srcset="img/logo-360.webp 360w, img/logo-720.webp 720w" sizes="(max-width: 760px) 86vw, 520px" width="720" height="383" alt="Bolt Ball" fetchpriority="high">
+        <div data-l="en" lang="en">
+          <h1>Roll a ball down a floating <span class="hl">3D track</span> and dodge everything.</h1>
+          <p>Bolt Ball is a 3D runner for iPhone and Android. Swipe to switch lanes, jump over holes, dive under bars and smash glass with turbo.</p>
+          <p class="soon">Coming soon to iPhone and Android</p>
+        </div>
+        <div data-l="pt" lang="pt-BR">
+          <h1>Guie uma bola por uma <span class="hl">pista 3D</span> flutuante e desvie de tudo.</h1>
+          <p>Bolt Ball é um jogo de corrida com obstáculos em 3D para iPhone e Android. Deslize para trocar de faixa, pular buracos, mergulhar sob barras e quebrar vidro no turbo.</p>
+          <p class="soon">Em breve para iPhone e Android</p>
+        </div>
+        <div data-l="es" lang="es">
+          <h1>Guía una bola por una <span class="hl">pista 3D</span> flotante y esquívalo todo.</h1>
+          <p>Bolt Ball es un juego de carreras con obstáculos en 3D para iPhone y Android. Desliza para cambiar de carril, saltar huecos, pasar bajo las barras y romper cristal con turbo.</p>
+          <p class="soon">Muy pronto en iPhone y Android</p>
+        </div>
+        <div data-l="fr" lang="fr">
+          <h1>Guidez une boule sur une <span class="hl">piste 3D</span> flottante et esquivez tout.</h1>
+          <p>Bolt Ball est un jeu de course d'obstacles en 3D pour iPhone et Android. Glissez le doigt pour changer de voie, sauter par-dessus les trous, plonger sous les barres et briser le verre avec le turbo.</p>
+          <p class="soon">Bientôt sur iPhone et Android</p>
+        </div>
+        <div data-l="de" lang="de">
+          <h1>Lenke einen Ball über eine schwebende <span class="hl">3D-Strecke</span> und weich allem aus.</h1>
+          <p>Bolt Ball ist ein 3D-Rennspiel mit Hindernissen für iPhone und Android. Wische, um die Spur zu wechseln, über Löcher zu springen, unter Stangen durchzutauchen und mit Turbo Glas zu zerschlagen.</p>
+          <p class="soon">Bald für iPhone und Android</p>
+        </div>
+      </div>
+      <figure class="shot">
+        <img src="img/splash-600.webp" srcset="img/splash-300.webp 300w, img/splash-600.webp 600w" sizes="(max-width: 760px) 70vw, 300px" width="600" height="900" alt="" loading="eager">
+      </figure>
+    </section>
+
+    <section class="lanes" aria-labelledby="moves-title">
+      <h2 id="moves-title" class="lanes-title">
+        <span data-l="en">Three lanes, three moves</span><span data-l="pt">Três faixas, três gestos</span><span data-l="es">Tres carriles, tres gestos</span><span data-l="fr">Trois voies, trois gestes</span><span data-l="de">Drei Spuren, drei Gesten</span>
+      </h2>
+      <div class="road-view" aria-hidden="true">
+        <div class="road"></div>
+        <div class="ball"><svg viewBox="0 0 24 24"><path d="M13.5 1.5 4 13.5h6.2L8.8 22.5 20 9.8h-6.6l.1-8.3Z" fill="#ffd21f" stroke="#7a3b00" stroke-width="1.2" stroke-linejoin="round"/></svg></div>
+      </div>
+      <ul class="moves">
+        <li>
+          <span class="gest" aria-hidden="true">&larr; &rarr;</span>
+          <span class="act"><span data-l="en">Switch lanes</span><span data-l="pt">Troque de faixa</span><span data-l="es">Cambia de carril</span><span data-l="fr">Changez de voie</span><span data-l="de">Spur wechseln</span></span>
+          <span class="why"><span data-l="en">Get around blocks, walls and moving blocks</span><span data-l="pt">Fuja de blocos, paredes e blocos que se movem</span><span data-l="es">Esquiva bloques, muros y bloques que se mueven</span><span data-l="fr">Contournez les blocs, les murs et les blocs mobiles</span><span data-l="de">Weich Blöcken, Wänden und beweglichen Blöcken aus</span></span>
+        </li>
+        <li>
+          <span class="gest" aria-hidden="true">&uarr;</span>
+          <span class="act"><span data-l="en">Jump</span><span data-l="pt">Pule</span><span data-l="es">Salta</span><span data-l="fr">Sautez</span><span data-l="de">Springen</span></span>
+          <span class="why"><span data-l="en">Clear low bars, spinning arms and holes</span><span data-l="pt">Passe por barras baixas, braços giratórios e buracos</span><span data-l="es">Supera barras bajas, brazos giratorios y huecos</span><span data-l="fr">Franchissez les barres basses, les bras rotatifs et les trous</span><span data-l="de">Spring über niedrige Stangen, Drehbalken und Löcher</span></span>
+        </li>
+        <li>
+          <span class="gest" aria-hidden="true">&darr;</span>
+          <span class="act"><span data-l="en">Dive</span><span data-l="pt">Mergulhe</span><span data-l="es">Lánzate</span><span data-l="fr">Plongez</span><span data-l="de">Ducken</span></span>
+          <span class="why"><span data-l="en">Squash flat and slide under high bars</span><span data-l="pt">Achate a bola e passe sob as barras altas</span><span data-l="es">Aplasta la bola y pasa bajo las barras altas</span><span data-l="fr">Aplatissez la boule et glissez sous les barres hautes</span><span data-l="de">Mach dich platt und rutsch unter hohen Stangen durch</span></span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="block">
+      <div class="grid2">
+        <div class="card">
+          <h3><span data-l="en">What is on the track</span><span data-l="pt">O que tem na pista</span><span data-l="es">Qué hay en la pista</span><span data-l="fr">Sur la piste</span><span data-l="de">Auf der Strecke</span></h3>
+          <ul class="chips" data-l="en" lang="en">
+            <li>Blocks</li><li>Walls</li><li>Moving blocks</li><li>Spinning arms</li><li>Swinging hammers</li><li>Pillars</li><li>Holes</li><li>Glass panels</li><li>Ramps</li><li>Boost pads</li><li>Coins and gems</li>
+          </ul>
+          <ul class="chips" data-l="pt" lang="pt-BR">
+            <li>Blocos</li><li>Paredes</li><li>Blocos que se movem</li><li>Braços giratórios</li><li>Martelos que balançam</li><li>Pilares</li><li>Buracos</li><li>Painéis de vidro</li><li>Rampas</li><li>Placas de turbo</li><li>Moedas e gemas</li>
+          </ul>
+          <ul class="chips" data-l="es" lang="es">
+            <li>Bloques</li><li>Muros</li><li>Bloques móviles</li><li>Brazos giratorios</li><li>Martillos que se balancean</li><li>Pilares</li><li>Huecos</li><li>Paneles de cristal</li><li>Rampas</li><li>Placas de turbo</li><li>Monedas y gemas</li>
+          </ul>
+          <ul class="chips" data-l="fr" lang="fr">
+            <li>Blocs</li><li>Murs</li><li>Blocs mobiles</li><li>Bras rotatifs</li><li>Marteaux oscillants</li><li>Piliers</li><li>Trous</li><li>Panneaux de verre</li><li>Rampes</li><li>Plaques de turbo</li><li>Pièces et gemmes</li>
+          </ul>
+          <ul class="chips" data-l="de" lang="de">
+            <li>Blöcke</li><li>Wände</li><li>Bewegliche Blöcke</li><li>Drehbalken</li><li>Schwingende Hämmer</li><li>Säulen</li><li>Löcher</li><li>Glasscheiben</li><li>Rampen</li><li>Turbo-Felder</li><li>Münzen und Edelsteine</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span data-l="en">Power-ups</span><span data-l="pt">Poderes</span><span data-l="es">Potenciadores</span><span data-l="fr">Bonus</span><span data-l="de">Power-ups</span></h3>
+          <ul class="powers">
+            <li><span class="pw" style="background:#ff4d6d" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M6 3v9a6 6 0 0 0 12 0V3h-4v9a2 2 0 0 1-4 0V3H6Z" fill="#fff"/><path d="M6 3h4v3H6zM14 3h4v3h-4z" fill="#0e1a4f"/></svg></span><span><b><span data-l="en">Magnet</span><span data-l="pt">Ímã</span><span data-l="es">Imán</span><span data-l="fr">Aimant</span><span data-l="de">Magnet</span></b> <span data-l="en">pulls coins to you</span><span data-l="pt">puxa as moedas até você</span><span data-l="es">atrae las monedas hacia ti</span><span data-l="fr">attire les pièces vers vous</span><span data-l="de">zieht Münzen zu dir</span></span></li>
+            <li><span class="pw" style="background:#3fa9ff" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="#fff"/></svg></span><span><b><span data-l="en">Shield</span><span data-l="pt">Escudo</span><span data-l="es">Escudo</span><span data-l="fr">Bouclier</span><span data-l="de">Schild</span></b> <span data-l="en">saves you from one crash</span><span data-l="pt">salva você de uma batida</span><span data-l="es">te salva de un choque</span><span data-l="fr">vous sauve d'une collision</span><span data-l="de">rettet dich bei einem Crash</span></span></li>
+            <li><span class="pw" style="background:#ffc21a;color:#0e1a4f" aria-hidden="true">x2</span><span><b>x2</b> <span data-l="en">doubles the coins you pick up</span><span data-l="pt">dobra as moedas que você pega</span><span data-l="es">duplica las monedas que recoges</span><span data-l="fr">double les pièces que vous ramassez</span><span data-l="de">verdoppelt die Münzen, die du einsammelst</span></span></li>
+            <li><span class="pw" style="background:#22e6ff" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M13.5 1.5 4 13.5h6.2L8.8 22.5 20 9.8h-6.6l.1-8.3Z" fill="#0e1a4f"/></svg></span><span><b>Turbo</b> <span data-l="en">speeds you up and makes you unstoppable for a moment</span><span data-l="pt">acelera e deixa você invencível por um instante</span><span data-l="es">te acelera y te hace invencible por un momento</span><span data-l="fr">vous accélère et vous rend imparable pendant un instant</span><span data-l="de">macht dich schneller und kurz unaufhaltsam</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2><span data-l="en">50 levels, 5 worlds and an endless mode</span><span data-l="pt">50 fases, 5 mundos e um modo infinito</span><span data-l="es">50 niveles, 5 mundos y un modo infinito</span><span data-l="fr">50 niveaux, 5 mondes et un mode infini</span><span data-l="de">50 Level, 5 Welten und ein Endlosmodus</span></h2>
+      <p data-l="en" lang="en">Reach the finish line to clear a level and earn up to 3 stars for the coins and gems you collect. Every fifth level is a challenge level with bigger rewards. In endless mode the track never ends and the speed keeps rising.</p>
+      <p data-l="pt" lang="pt-BR">Cruze a linha de chegada para vencer a fase e ganhe até 3 estrelas pelas moedas e gemas que pegar. A cada 5 fases vem uma fase de desafio com prêmios maiores. No modo infinito a pista não acaba e a velocidade só aumenta.</p>
+      <p data-l="es" lang="es">Cruza la meta para superar el nivel y gana hasta 3 estrellas por las monedas y gemas que recojas. Cada 5 niveles llega un nivel de desafío con mejores recompensas. En el modo infinito la pista nunca termina y la velocidad no deja de subir.</p>
+      <p data-l="fr" lang="fr">Franchissez la ligne d'arrivée pour terminer un niveau et gagnez jusqu'à 3 étoiles grâce aux pièces et aux gemmes ramassées. Tous les 5 niveaux, un niveau défi offre de plus grosses récompenses. En mode infini, la piste ne s'arrête jamais et la vitesse ne cesse d'augmenter.</p>
+      <p data-l="de" lang="de">Erreiche die Ziellinie, um ein Level zu schaffen, und hol dir bis zu 3 Sterne für die Münzen und Edelsteine, die du sammelst. Jedes fünfte Level ist eine Herausforderung mit größeren Belohnungen. Im Endlosmodus endet die Strecke nie und das Tempo steigt immer weiter.</p>
+      <ul class="worlds">
+        <li style="background:#9ed9ff;color:#0e2a52;box-shadow:inset 0 -8px 0 #2f7cff"><span data-l="en">Sky</span><span data-l="pt">Céu</span><span data-l="es">Cielo</span><span data-l="fr">Ciel</span><span data-l="de">Himmel</span></li>
+        <li style="background:#ffb488;color:#4a1a12;box-shadow:inset 0 -8px 0 #ff5a5f"><span data-l="en">Sunset</span><span data-l="pt">Pôr do Sol</span><span data-l="es">Atardecer</span><span data-l="fr">Coucher de soleil</span><span data-l="de">Sonnen&shy;untergang</span></li>
+        <li style="background:#1b1745;color:#ffffff;box-shadow:inset 0 -8px 0 #ff2fd0"><span data-l="en">Neon</span><span data-l="pt">Neon</span><span data-l="es">Neon</span><span data-l="fr">Néon</span><span data-l="de">Neon</span></li>
+        <li style="background:#ffc7e2;color:#4f1030;box-shadow:inset 0 -8px 0 #ff4f9a"><span data-l="en">Candy</span><span data-l="pt">Doces</span><span data-l="es">Dulces</span><span data-l="fr">Bonbons</span><span data-l="de">Bonbons</span></li>
+        <li style="background:#c4ecff;color:#0b3550;box-shadow:inset 0 -8px 0 #1fa6dd"><span data-l="en">Ice</span><span data-l="pt">Gelo</span><span data-l="es">Hielo</span><span data-l="fr">Glace</span><span data-l="de">Eis</span></li>
+      </ul>
+    </section>
+
+    <section class="block">
+      <h2><span data-l="en">30 balls to collect</span><span data-l="pt">30 bolas para colecionar</span><span data-l="es">30 bolas para coleccionar</span><span data-l="fr">30 boules à collectionner</span><span data-l="de">30 Bälle zum Sammeln</span></h2>
+      <ul class="balls" aria-hidden="true">
+        <li style="--b:#ff3d5a;--a:#ffffff"></li><li style="--b:#8ee000;--a:#e9ffc2"></li><li style="--b:#2f7cff;--a:#bfe1ff"></li><li style="--b:#7b3cff;--a:#e2d4ff"></li>
+        <li style="--b:#ffc21a;--a:#fff3bf"></li><li style="--b:#22d3a0;--a:#d6fff1"></li><li style="--b:#ff7a1a;--a:#ffffff"></li><li style="--b:#ff4f9a;--a:#ffffff"></li>
+        <li style="--b:#2fa84f;--a:#ff4d6d"></li><li style="--b:#c07a3a;--a:#f2c79a"></li><li style="--b:#0c1030;--a:#3cf2ff"></li><li style="--b:#2a1210;--a:#ff6a1a"></li>
+        <li style="--b:#d9542b;--a:#ff9f6e"></li><li style="--b:#1c1240;--a:#b48cff"></li><li style="--b:#9fe6ff;--a:#ffffff"></li><li style="--b:#ffd21f;--a:#1d1f33"></li>
+      </ul>
+      <p data-l="en" lang="en">Unlock new balls and trails with coins, gems, level rewards or optional videos. A free chest refills over time, and you see the reward before you open it.</p>
+      <p data-l="pt" lang="pt-BR">Libere bolas e rastros novos com moedas, gemas, prêmios de fase ou vídeos opcionais. Um baú grátis se enche com o tempo, e você vê o prêmio antes de abrir.</p>
+      <p data-l="es" lang="es">Desbloquea bolas y estelas nuevas con monedas, gemas, premios de nivel o vídeos opcionales. Un cofre gratis se llena con el tiempo y ves el premio antes de abrirlo.</p>
+      <p data-l="fr" lang="fr">Débloquez de nouvelles boules et traînées avec des pièces, des gemmes, des récompenses de niveau ou des vidéos facultatives. Un coffre gratuit se remplit avec le temps, et vous voyez la récompense avant de l'ouvrir.</p>
+      <p data-l="de" lang="de">Schalte neue Bälle und Schweife mit Münzen, Edelsteinen, Level-Belohnungen oder freiwilligen Videos frei. Eine Gratis-Truhe füllt sich mit der Zeit, und du siehst die Belohnung, bevor du sie öffnest.</p>
+    </section>
+
+    <section class="block honest">
+      <h2><span data-l="en">How the game is paid for</span><span data-l="pt">Como o jogo se paga</span><span data-l="es">Cómo se paga el juego</span><span data-l="fr">Comment le jeu est financé</span><span data-l="de">So finanziert sich das Spiel</span></h2>
+      <ul data-l="en" lang="en">
+        <li>Bolt Ball shows ads. Videos with a reward are always optional: you tap to watch.</li>
+        <li>No account, no sign-up and no in-app purchases.</li>
+        <li>Your progress is saved on your device.</li>
+        <li>Players under 18 only get non-personalized ads. <a data-keep href="privacy.html#en" style="color:#ffd21f">Read the privacy policy</a>.</li>
+      </ul>
+      <ul data-l="pt" lang="pt-BR">
+        <li>O Bolt Ball mostra anúncios. Vídeos com prêmio são sempre opcionais: você toca para assistir.</li>
+        <li>Sem conta, sem cadastro e sem compras no app.</li>
+        <li>Seu progresso fica salvo no aparelho.</li>
+        <li>Quem tem menos de 18 anos só recebe anúncio não personalizado. <a data-keep href="privacy.html#pt" style="color:#ffd21f">Leia a política de privacidade</a>.</li>
+      </ul>
+      <ul data-l="es" lang="es">
+        <li>Bolt Ball muestra anuncios. Los vídeos con recompensa siempre son opcionales: tocas para verlos.</li>
+        <li>Sin cuenta, sin registro y sin compras en la app.</li>
+        <li>Tu progreso se guarda en tu dispositivo.</li>
+        <li>Los jugadores menores de 18 años solo reciben anuncios no personalizados. <a data-keep href="privacy.html#es" style="color:#ffd21f">Lee la política de privacidad</a>.</li>
+      </ul>
+      <ul data-l="fr" lang="fr">
+        <li>Bolt Ball affiche des publicités. Les vidéos avec récompense sont toujours facultatives&nbsp;: c'est vous qui appuyez pour les regarder.</li>
+        <li>Pas de compte, pas d'inscription et pas d'achats intégrés.</li>
+        <li>Votre progression est enregistrée sur votre appareil.</li>
+        <li>Les joueurs de moins de 18 ans ne reçoivent que des publicités non personnalisées. <a data-keep href="privacy.html#fr" style="color:#ffd21f">Lire la politique de confidentialité</a>.</li>
+      </ul>
+      <ul data-l="de" lang="de">
+        <li>Bolt Ball zeigt Werbung. Videos mit Belohnung sind immer freiwillig: Du tippst, um sie anzusehen.</li>
+        <li>Kein Konto, keine Registrierung und keine In-App-Käufe.</li>
+        <li>Dein Fortschritt wird auf deinem Gerät gespeichert.</li>
+        <li>Spieler unter 18 Jahren bekommen nur nicht personalisierte Werbung. <a data-keep href="privacy.html#de" style="color:#ffd21f">Datenschutzerklärung lesen</a>.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <nav aria-label="Links">
+      <a data-keep href="privacy.html#en"><span data-l="en">Privacy</span><span data-l="pt">Privacidade</span><span data-l="es">Privacidad</span><span data-l="fr">Confidentialité</span><span data-l="de">Datenschutz</span></a>
+      <a data-keep href="support.html#en"><span data-l="en">Support</span><span data-l="pt">Suporte</span><span data-l="es">Soporte</span><span data-l="fr">Assistance</span><span data-l="de">Support</span></a>
+      <a data-keep href="terms.html#en"><span data-l="en">Terms</span><span data-l="pt">Termos</span><span data-l="es">Términos</span><span data-l="fr">Conditions</span><span data-l="de">Nutzungsbedingungen</span></a>
+      <a href="mailto:contact@fietzgroup.com">contact@fietzgroup.com</a>
+    </nav>
+    <p>&copy; 2026 Fietz Group. Bolt Ball.</p>
+  </footer>
+</div>
+</body>
+</html>
